@@ -1,0 +1,154 @@
+buildscript {
+    ext {
+        springBootVersion = '1.2.5.RELEASE'
+    }
+    repositories {
+        maven {
+            url "${artifactory_pluginsUrl}"
+            credentials {
+                username = "${artifactory_user}"
+                password = "${artifactory_password}"
+            }
+        }
+    }
+    dependencies {
+        //Check for the latest version here: http://plugins.gradle.org/plugin/com.jfrog.artifactory
+        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:3.1.1'
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'maven-publish'
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'project-report'
+
+group 'io.metamorphic'
+version '1.0'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+configurations {
+    provided
+    compile.extendsFrom provided
+}
+
+jar {
+    baseName = 'fileapi'
+    version = '1.0'
+}
+
+artifactory {
+    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+    publish {
+        repository {
+            repoKey = 'libs-release-local'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+        }
+        defaults {
+            publications ('mavenJava')
+        }
+    }
+    resolve {
+        repository {
+            repoKey = 'libs-release'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+        }
+    }
+}
+
+dependencies {
+    compile 'io.metamorphic:fileservices:1.0'
+    compile('io.metamorphic:analysisservices:1.0') {
+        exclude group: 'net.sf.opencsv'
+
+        // AnalyzerBeans-core has a scala-library dependency
+        // otherwise ClassNotFoundException: scala.collection.GenTraversableOnce$class
+        exclude group: 'org.scala-lang', module: 'scala-library'
+    }
+    compile('io.metamorphic:sparkprofiler:1.0') {
+        // the following is excluded otherwise a servlet version conflict
+        exclude group: 'javax.servlet'
+        exclude group: 'org.glassfish'
+        exclude group: 'org.eclipse.jetty.orbit'
+
+        // otherwise ClassNotFoundException: scala.collection.GenTraversableOnce$class
+        exclude group: 'org.scala-lang', module: 'scala-library'
+
+        // otherwise java.lang.VerifyError: (class: org/jboss/netty/channel/socket/nio/NioWorkerPool, method: createWorker signature: (Ljava/util/concurrent/Executor;)Lorg/jboss/netty/channel/socket/nio/AbstractNioWorker;) Wrong return type in function
+        exclude group: 'org.jboss.netty'
+    }
+    // scala-library:2.11.7 is a transitive dependency of spark-core_2.10:1.5.1, which results in ClassNotFoundException: scala.collection.GenTraversableOnce$class
+    // however we get java.lang.VerifyError org/jboss/netty/channel/socket/nio/NioWorkerPool::createWorker as a result unless excluded above
+    compile 'org.scala-lang:scala-library:2.10.4'
+
+    compile 'io.metamorphic:metamodel:1.0'
+    compile files('libs/opencsv-2.4-SNAPSHOT.jar')
+
+    // exclude module: 'spring-boot-starter-logging'
+    // thought it might be causing ClassNotFoundException: scala.collection.GenTraversableOnce$class
+    // OK to remove as I was getting 'Class path contains multiple SLF4J bindings' with it included
+    // however log format has changed and is not as nice
+
+    compile('org.springframework.boot:spring-boot-starter-web') {
+        exclude module: 'spring-boot-starter-logging'
+    }
+    compile('org.springframework.boot:spring-boot-starter-data-jpa') {
+        exclude module: 'spring-boot-starter-logging'
+    }
+    compile('org.springframework.boot:spring-boot-starter-data-rest') {
+        exclude module: 'spring-boot-starter-logging'
+    }
+    compile 'org.springframework.session:spring-session:1.0.0.RELEASE'
+    compile('org.springframework.boot:spring-boot-starter-redis') {
+        exclude module: 'spring-boot-starter-logging'
+    }
+    compile('org.springframework.boot:spring-boot-starter-websocket') {
+        exclude module: 'spring-boot-starter-logging'
+    }
+    compile 'org.springframework:spring-messaging'
+    compile('org.springframework.boot:spring-boot-starter-security') {
+        exclude module: 'spring-boot-starter-logging'
+    }
+    compile 'org.springframework.security:spring-security-config:4.0.2.RELEASE'
+    compile 'org.springframework.security:spring-security-messaging:4.0.2.RELEASE'
+    compile 'org.springframework.security:spring-security-web:4.0.2.RELEASE'
+    compile files('libs/stanford-ner.jar')
+    compile 'org.postgresql:postgresql:9.4-1201-jdbc4'
+//    compile 'org.hibernate:hibernate-core:4.3.8.Final'
+//    compile 'org.hibernate:hibernate-entitymanager:4.3.8.Final'
+//    compile 'org.hibernate.common:hibernate-commons-annotations:4.0.5.Final'
+//    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+//    compile 'org.hibernate:hibernate-validator:5.1.3.Final'
+//    compile 'com.fasterxml.jackson.core:jackson-core:2.4.6'
+//    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.6'
+//    compile 'com.fasterxml.jackson.core:jackson-annotations:2.4.6'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4:2.4.6'
+
+    // already included with spark dependency in analysisservices
+    // uncomment if spark dependency is removed
+//    compile 'com.typesafe.akka:akka-actor_2.11:2.4.0'
+//    compile 'com.typesafe.akka:akka-slf4j_2.11:2.4.0'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.5'
+    distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+}

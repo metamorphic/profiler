@@ -1,0 +1,1026 @@
+{
+    "fileType": "DELIMITED",
+    "fileParameters": {
+        "textQualifier": "\"",
+        "doubleQuoted": false,
+        "columnDelimiter": ",",
+        "skipInitialSpace": true,
+        "header": true,
+        "lineTerminator": "\\r\\n",
+        "quoting": "QUOTE_MINIMAL",
+        "escapeCharacter": "\\"
+    },
+    "columns": [
+        {
+            "name": "WEEK_OF_YEAR",
+            "columnIndex": 1,
+            "type": "STRING",
+            "metrics": [
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Total char count",
+                    "value": 133
+                },
+                {
+                    "name": "Word count",
+                    "value": 19
+                },
+                {
+                    "name": "Min chars",
+                    "value": 7
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 1
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Max words",
+                    "value": 1
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 133
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Max chars",
+                    "value": 7
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 114
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 0
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "matchCount",
+                    "value": 19
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 7
+                },
+                {
+                    "name": "sample",
+                    "value": "2015-14"
+                }
+            ]
+        },
+        {
+            "name": "FROMDT",
+            "columnIndex": 2,
+            "type": "DATE",
+            "metrics": [
+                {
+                    "name": "75th percentile",
+                    "value": "2015-03-28 00:00"
+                },
+                {
+                    "name": "Highest date",
+                    "value": "2015-03-28"
+                },
+                {
+                    "name": "Total char count",
+                    "value": 171
+                },
+                {
+                    "name": "Min chars",
+                    "value": 9
+                },
+                {
+                    "name": "Word count",
+                    "value": 19
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 19
+                },
+                {
+                    "name": "Lowest date",
+                    "value": "2015-03-28"
+                },
+                {
+                    "name": "Lowest time",
+                    "value": "00:00:00.000"
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 114
+                },
+                {
+                    "name": "Kurtosis",
+                    "value": null
+                },
+                {
+                    "name": "25th percentile",
+                    "value": "2015-03-28 00:00"
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 76
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 9
+                },
+                {
+                    "name": "sample",
+                    "value": "28/MAR/15"
+                },
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 57
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 1
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Skewness",
+                    "value": null
+                },
+                {
+                    "name": "Max words",
+                    "value": 1
+                },
+                {
+                    "name": "Max chars",
+                    "value": 9
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Median",
+                    "value": "2015-03-28 00:00"
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 38
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "matchCount",
+                    "value": 19
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Highest time",
+                    "value": "00:00:00.000"
+                },
+                {
+                    "name": "Mean",
+                    "value": "2015-03-28 00:00"
+                }
+            ]
+        },
+        {
+            "name": "TODT",
+            "columnIndex": 3,
+            "type": "DATE",
+            "metrics": [
+                {
+                    "name": "75th percentile",
+                    "value": "2015-04-03 00:00"
+                },
+                {
+                    "name": "Highest date",
+                    "value": "2015-04-03"
+                },
+                {
+                    "name": "Total char count",
+                    "value": 171
+                },
+                {
+                    "name": "Min chars",
+                    "value": 9
+                },
+                {
+                    "name": "Word count",
+                    "value": 19
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 19
+                },
+                {
+                    "name": "Lowest date",
+                    "value": "2015-04-03"
+                },
+                {
+                    "name": "Lowest time",
+                    "value": "00:00:00.000"
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 114
+                },
+                {
+                    "name": "Kurtosis",
+                    "value": null
+                },
+                {
+                    "name": "25th percentile",
+                    "value": "2015-04-03 00:00"
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 76
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 9
+                },
+                {
+                    "name": "sample",
+                    "value": "03/APR/15"
+                },
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 57
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 1
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Skewness",
+                    "value": null
+                },
+                {
+                    "name": "Max words",
+                    "value": 1
+                },
+                {
+                    "name": "Max chars",
+                    "value": 9
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Median",
+                    "value": "2015-04-03 00:00"
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 38
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "matchCount",
+                    "value": 19
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Highest time",
+                    "value": "00:00:00.000"
+                },
+                {
+                    "name": "Mean",
+                    "value": "2015-04-03 00:00"
+                }
+            ]
+        },
+        {
+            "name": "MSISDN",
+            "columnIndex": 4,
+            "type": "STRING",
+            "metrics": [
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Total char count",
+                    "value": 190
+                },
+                {
+                    "name": "Word count",
+                    "value": 19
+                },
+                {
+                    "name": "Min chars",
+                    "value": 10
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 1
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Max words",
+                    "value": 1
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 190
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Max chars",
+                    "value": 10
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 190
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 0
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "matchCount",
+                    "value": 19
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 10
+                },
+                {
+                    "name": "sample",
+                    "value": "0428262372"
+                }
+            ]
+        },
+        {
+            "name": "NETWORK",
+            "columnIndex": 5,
+            "type": "STRING",
+            "metrics": [
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Total char count",
+                    "value": 113
+                },
+                {
+                    "name": "Word count",
+                    "value": 19
+                },
+                {
+                    "name": "Min chars",
+                    "value": 2
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 113
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 19
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 1
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Max words",
+                    "value": 1
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 0
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Max chars",
+                    "value": 7
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 0
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 94
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "matchCount",
+                    "value": 4
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 5.947368421052632
+                },
+                {
+                    "name": "sample",
+                    "value": "OP"
+                }
+            ]
+        },
+        {
+            "name": "LASTCDRDATE",
+            "columnIndex": 6,
+            "type": "DATE",
+            "metrics": [
+                {
+                    "name": "75th percentile",
+                    "value": "2015-04-03 00:00"
+                },
+                {
+                    "name": "Highest date",
+                    "value": "2015-04-03"
+                },
+                {
+                    "name": "Total char count",
+                    "value": 171
+                },
+                {
+                    "name": "Min chars",
+                    "value": 9
+                },
+                {
+                    "name": "Word count",
+                    "value": 19
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 19
+                },
+                {
+                    "name": "Lowest date",
+                    "value": "2014-12-17"
+                },
+                {
+                    "name": "Lowest time",
+                    "value": "00:00:00.000"
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 114
+                },
+                {
+                    "name": "Kurtosis",
+                    "value": 6.606311668092266
+                },
+                {
+                    "name": "25th percentile",
+                    "value": "2015-03-27 00:00"
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 76
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 9
+                },
+                {
+                    "name": "sample",
+                    "value": "03/APR/15"
+                },
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 57
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 1
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Skewness",
+                    "value": -2.615632694530721
+                },
+                {
+                    "name": "Max words",
+                    "value": 1
+                },
+                {
+                    "name": "Max chars",
+                    "value": 9
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Median",
+                    "value": "2015-04-03 00:00"
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 38
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "matchCount",
+                    "value": 19
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Highest time",
+                    "value": "00:00:00.000"
+                },
+                {
+                    "name": "Mean",
+                    "value": "2015-03-21 02:31"
+                }
+            ]
+        },
+        {
+            "name": "CALL_STATUS",
+            "columnIndex": 7,
+            "type": "STRING",
+            "metrics": [
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Total char count",
+                    "value": 441
+                },
+                {
+                    "name": "Word count",
+                    "value": 86
+                },
+                {
+                    "name": "Min chars",
+                    "value": 21
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 332
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 19
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 4
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Max words",
+                    "value": 9
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 109
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Max chars",
+                    "value": 42
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 23
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 4
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 313
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 4.421052631578948
+                },
+                {
+                    "name": "matchCount",
+                    "value": 2
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 8
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 23.210526315789473
+                },
+                {
+                    "name": "sample",
+                    "value": "ACTIVE LAST 6 MONTHS BUT DORMANT > 60 DAYS"
+                }
+            ]
+        },
+        {
+            "name": "NETWORK_STATUS",
+            "columnIndex": 8,
+            "type": "STRING",
+            "metrics": [
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Total char count",
+                    "value": 283
+                },
+                {
+                    "name": "Word count",
+                    "value": 48
+                },
+                {
+                    "name": "Min chars",
+                    "value": 12
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 254
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 19
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 2
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Max words",
+                    "value": 4
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 29
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Max chars",
+                    "value": 23
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 0
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 1
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 235
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 1.5263157894736843
+                },
+                {
+                    "name": "matchCount",
+                    "value": 5
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 3
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 14.894736842105264
+                },
+                {
+                    "name": "sample",
+                    "value": "SAME FROM PREVIOUS WEEK"
+                }
+            ]
+        },
+        {
+            "name": "STATE",
+            "columnIndex": 9,
+            "type": "STRING",
+            "metrics": [
+                {
+                    "name": "Row count",
+                    "value": 19
+                },
+                {
+                    "name": "Total char count",
+                    "value": 52
+                },
+                {
+                    "name": "Word count",
+                    "value": 19
+                },
+                {
+                    "name": "Min chars",
+                    "value": 2
+                },
+                {
+                    "name": "Uppercase chars",
+                    "value": 52
+                },
+                {
+                    "name": "Entirely uppercase count",
+                    "value": 19
+                },
+                {
+                    "name": "Entirely lowercase count",
+                    "value": 0
+                },
+                {
+                    "name": "Min words",
+                    "value": 1
+                },
+                {
+                    "name": "Diacritic chars",
+                    "value": 0
+                },
+                {
+                    "name": "Max words",
+                    "value": 1
+                },
+                {
+                    "name": "Non-letter chars",
+                    "value": 0
+                },
+                {
+                    "name": "Blank count",
+                    "value": 0
+                },
+                {
+                    "name": "Max chars",
+                    "value": 3
+                },
+                {
+                    "name": "Digit chars",
+                    "value": 0
+                },
+                {
+                    "name": "Min white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Lowercase chars",
+                    "value": 0
+                },
+                {
+                    "name": "Uppercase chars (excl. first letters)",
+                    "value": 33
+                },
+                {
+                    "name": "Avg white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "matchCount",
+                    "value": 5
+                },
+                {
+                    "name": "Null count",
+                    "value": 0
+                },
+                {
+                    "name": "Max white spaces",
+                    "value": 0
+                },
+                {
+                    "name": "Avg chars",
+                    "value": 2.736842105263158
+                },
+                {
+                    "name": "sample",
+                    "value": "WA"
+                }
+            ]
+        }
+    ]
+}
