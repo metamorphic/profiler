@@ -10,9 +10,9 @@ A profiling tool for Big Data.
 
 ![Home](assets/treemap.jpg)
 
-![Home](assets/file_datasets.jpg)
+![Home](assets/table_sources.jpg)
 
-![Home](assets/drilldown.jpg)
+![Home](assets/analysis.jpg)
 
 
 ## Starting the Project
