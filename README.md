@@ -2,6 +2,19 @@
 
 A profiling tool for Big Data.
 
+![Home](assets/profiler_login.jpg)
+
+![Home](assets/register_source.jpg)
+
+![Home](assets/columns.jpg)
+
+![Home](assets/treemap.jpg)
+
+![Home](assets/file_datasets.jpg)
+
+![Home](assets/drilldown.jpg)
+
+
 ## Starting the Project
 
 Profiler adopts a microservices architecture, and as such, has a number of dependent services.
